@@ -1,0 +1,112 @@
+{
+  "room_datas": [
+    {
+      "room_id": 2,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 3,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 4,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 5,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 6,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 7,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 8,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 9,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    },
+    {
+      "room_id": 10,
+      "room_name": "直播间",
+      "streamer_id": 100001,
+      "streamer_name": "小七",
+      "streamer_pic": "picpath...",
+      "product_ids": [
+        "string"
+      ],
+      "stream_status": "down",
+      "streamer_status": "draft"
+    }
+  ]
+}
