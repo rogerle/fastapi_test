@@ -1,0 +1,49 @@
+{
+  "slice_datas": [
+    {
+      "id": 1,
+      "name": "节目切片1",
+      "voiceText": "你好，我是主播，这是第一个产品",
+      "streamer": {
+        "id": 100001,
+        "name": "小七",
+        "picPath": "picpath...",
+        "defautlVideoPath": "defaultVideo...",
+        "authType": "personal",
+        "audioPath": "audioPath...",
+        "resourcePath": "resourcePath..."
+      },
+      "status": "synthesis"
+    },
+    {
+      "id": 2,
+      "name": "节目切片1",
+      "voiceText": "你好，我是主播，这是第一个产品",
+      "streamer": {
+        "id": 100001,
+        "name": "小七",
+        "picPath": "picpath...",
+        "defautlVideoPath": "defaultVideo...",
+        "authType": "personal",
+        "audioPath": "audioPath...",
+        "resourcePath": "resourcePath..."
+      },
+      "status": "synthesis"
+    },
+    {
+      "id": 3,
+      "name": "节目切片1",
+      "voiceText": "你好，我是主播，这是第一个产品",
+      "streamer": {
+        "id": 100001,
+        "name": "小七",
+        "picPath": "picpath...",
+        "defautlVideoPath": "defaultVideo...",
+        "authType": "personal",
+        "audioPath": "audioPath...",
+        "resourcePath": "resourcePath..."
+      },
+      "status": "synthesis"
+    }
+  ]
+}

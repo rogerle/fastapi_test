@@ -5,7 +5,7 @@ from typing import Union,Set,List
 from fastapi import FastAPI,Request,Body,Form
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-
+from fastapi.encoders import jsonable_encoder
 app = FastAPI()
 origins = [
     "http://localhost:5173",
@@ -83,8 +83,44 @@ def get_slices(slice_name: str):
 #创建切片片段数据
 @app.post('/slice/create')
 def create_slice(slice:StreamSlice):
-    slice_id = 0
-    return{"message":"create new slice"}
+
+    with open('id_slices.txt','r') as idf:
+        ids = idf.read()
+        if len(ids) >0:
+            key_id = int(ids)
+        else:
+            key_id = 0
+    slice_id = key_id+1
+
+    #开始创建内容
+    streamer = jsonable_encoder(slice.streamer)
+    print(streamer)
+    slice_data = {"id":slice_id}
+    slice_data.update({"name":slice.name,
+                       "voiceText":slice.voiceText,
+                       "streamer":streamer,
+                       "status":slice.status})
+    print(slice_data)
+    try:
+        with open('slices.json','r') as sf:
+            sfile = sf.read()
+            if len(sfile) > 0:
+                slice_datas = json.loads(sfile)
+            else:
+                slice_datas = {"slice_datas":[]}
+        slice_datas['slice_datas'].append(slice_data)
+        #写入Json文件
+        with open('slices.json','w') as wsf:
+            json.dump(slice_datas,wsf,ensure_ascii=False)
+        with open('id_slices.txt','w') as kf:
+            kf.write(str(slice_id))
+        tag = 0
+
+    except IOError:
+
+        tag = -1
+
+    return{"message":"create new slice","data":slice_data,"tag":tag}
 
 #选择主播
 @app.get('/streamer/{streamer_id}')
